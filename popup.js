@@ -1,16 +1,5 @@
-function getAutoCopy() {
-    var checkbox = document.getElementById("auto_copy");
-    return checkbox.checked;
-}
-
-function copy(id) {
-    if (getAutoCopy()) {
-        var text = document.getElementById(id);
-        text.select();
-        text.setSelectionRange(0, 9999999);
-        document.execCommand("copy");
-    }
-}
+import { copy } from "./helper.js";
+import { sha256 } from "./hash.js";
 
 document.getElementById("base64_encode").addEventListener("click", base64_encode)
 document.getElementById("base64_decode").addEventListener("click", base64_decode)
@@ -45,4 +34,12 @@ function URI_decode() {
     var input = document.getElementById("URIField");
     input.value = decodeURI(input.value);
     copy("URIField");
+}
+
+document.getElementById("sha256").addEventListener("click", do_sha256)
+
+function do_sha256() {
+    var input = document.getElementById("sha256Field");
+    input.value = sha256(input.value);
+    copy("sha256Field");
 }
