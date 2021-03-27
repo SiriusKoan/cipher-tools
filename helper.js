@@ -12,4 +12,11 @@ function copy(id) {
     }
 }
 
-export { copy };
+function clear() {
+    var all_input = document.getElementsByTagName("input");
+    for (var i = 0; i < all_input.length; i++) {
+        all_input[i].value = "";
+    }
+}
+
+export { copy, clear };

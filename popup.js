@@ -1,5 +1,7 @@
-import { copy } from "./helper.js";
+import { copy, clear } from "./helper.js";
 import { sha256 } from "./hash.js";
+
+document.getElementById("clear").addEventListener("click", clear)
 
 document.getElementById("base64_encode").addEventListener("click", base64_encode)
 document.getElementById("base64_decode").addEventListener("click", base64_decode)
