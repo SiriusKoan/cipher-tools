@@ -1,0 +1,10 @@
+{
+  "name": "Code",
+  "version": "0.1",
+  "description": "Help you encode and decode",
+  "permissions": ["activeTab", "declarativeContent", "storage"],
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "manifest_version": 2
+}
