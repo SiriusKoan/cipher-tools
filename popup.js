@@ -45,3 +45,7 @@ function do_sha256() {
     input.value = sha256(input.value);
     copy("sha256Field");
 }
+
+document.getElementById("json").addEventListener("click", function () {
+    chrome.tabs.executeScript(null, { file: "process_json.js" })
+})

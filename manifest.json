@@ -1,8 +1,12 @@
 {
-  "name": "Code",
+  "name": "CTFHelper",
   "version": "0.1",
-  "description": "Help you encode and decode",
-  "permissions": ["activeTab", "tabs", "storage"],
+  "description": "",
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "storage"
+  ],
   "browser_action": {
     "default_popup": "popup.html"
   },
