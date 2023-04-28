@@ -1,6 +1,6 @@
 {
   "name": "CTFHelper",
-  "version": "0.1",
+  "version": "1.0",
   "description": "",
   "permissions": [
     "activeTab",
@@ -8,7 +8,10 @@
     "storage"
   ],
   "browser_action": {
-    "default_popup": "popup.html"
+    "default_popup": "popup.html",
+    "default_icon": {
+      "19": "images/icon.png"
+    }
   },
   "manifest_version": 2
 }
