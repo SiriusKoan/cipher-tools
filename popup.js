@@ -1,5 +1,4 @@
 import { copy, clear } from "./helper.js";
-import { sha256 } from "./hash.js";
 
 document.getElementById("clear").addEventListener("click", clear)
 
@@ -41,11 +40,8 @@ function URI_decode() {
 document.getElementById("sha256").addEventListener("click", do_sha256)
 
 function do_sha256() {
+    var SHA256 =  new Hashes.SHA256;
     var input = document.getElementById("sha256Field");
-    input.value = sha256(input.value);
+    input.value = SHA256.hex(input.value);
     copy("sha256Field");
 }
-
-document.getElementById("json").addEventListener("click", function () {
-    chrome.tabs.executeScript(null, { file: "process_json.js" })
-})
