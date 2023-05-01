@@ -1,30 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="style.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jshashes/1.0.8/hashes.min.js" integrity="sha512-1HyPmPHvi5wFUctYkBhwOYgXmMdbPrDaXKBrbGRI3o1CQkTKazG/RKqR8QwVIjTDOQ3uAOPOFkEbzi99Td6yiQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jshashes/1.0.8/hashes.min.js"
+    integrity="sha512-1HyPmPHvi5wFUctYkBhwOYgXmMdbPrDaXKBrbGRI3o1CQkTKazG/RKqR8QwVIjTDOQ3uAOPOFkEbzi99Td6yiQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
+
 <body>
-  <span>base64</span>
-  <input type="text" id="base64Field">
-  <button id="base64_encode">Encode</button>
-  <button id="base64_decode">Decode</button>
-  <hr>
-  <span>URI</span>
-  <input type="text" id="URIField">
-  <button id="load_url">Load current URL</button>
-  <button id="URI_encode">Encode</button>
-  <button id="URI_decode">Decode</button>
-  <hr>
-  <span>SHA256</span>
-  <input type="text" id="sha256Field">
-  <button id="sha256">Hash</button>
-  <hr>
+  <div class="container">
+    <span>base64</span>
+    <input type="text" id="base64Field">
+    <button id="base64_encode">Encode</button>
+    <button id="base64_decode">Decode</button>
+  </div>
+  <div class="container">
+    <span>URI</span>
+    <input type="text" id="URIField">
+    <button id="load_url">Load current URL</button>
+    <button id="URI_encode">Encode</button>
+    <button id="URI_decode">Decode</button>
+  </div>
+  <div class="container">
+    <span>MD5</span>
+    <input type="text" id="md5Field">
+    <button id="md5">Hash</button>
+  </div>
+  <div class="container">
+    <span>SHA1</span>
+    <input type="text" id="sha1Field">
+    <button id="sha1">Hash</button>
+  </div>
+  <div class="container">
+    <span>SHA256</span>
+    <input type="text" id="sha256Field">
+    <button id="sha256">Hash</button>
+  </div>
 
   <input type="checkbox" id="auto_copy" name="auto_copy"><label for="auto_copy">Auto Copy</label>
   <button id="clear">Clear</button>
 
   <script src="popup.js" type="module"></script>
 </body>
+
 </html>

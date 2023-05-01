@@ -37,6 +37,15 @@ function URI_decode() {
     copy("URIField");
 }
 
+document.getElementById("sha1").addEventListener("click", do_sha1)
+
+function do_sha1() {
+    var SHA1 =  new Hashes.SHA1;
+    var input = document.getElementById("sha1Field");
+    input.value = SHA1.hex(input.value);
+    copy("sha1Field");
+}
+
 document.getElementById("sha256").addEventListener("click", do_sha256)
 
 function do_sha256() {
@@ -44,4 +53,13 @@ function do_sha256() {
     var input = document.getElementById("sha256Field");
     input.value = SHA256.hex(input.value);
     copy("sha256Field");
+}
+
+document.getElementById("md5").addEventListener("click", do_md5)
+
+function do_md5() {
+    var MD5 =  new Hashes.MD5;
+    var input = document.getElementById("md5Field");
+    input.value = MD5.hex(input.value);
+    copy("md5Field");
 }
