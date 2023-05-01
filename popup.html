@@ -7,6 +7,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jshashes/1.0.8/hashes.min.js"
     integrity="sha512-1HyPmPHvi5wFUctYkBhwOYgXmMdbPrDaXKBrbGRI3o1CQkTKazG/RKqR8QwVIjTDOQ3uAOPOFkEbzi99Td6yiQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -19,7 +22,7 @@
   <div class="container">
     <span>URI</span>
     <input type="text" id="URIField">
-    <button id="load_url">Load current URL</button>
+    <button id="load_url">Load</button>
     <button id="URI_encode">Encode</button>
     <button id="URI_decode">Decode</button>
   </div>
@@ -38,10 +41,6 @@
     <input type="text" id="sha256Field">
     <button id="sha256">Hash</button>
   </div>
-
-  <input type="checkbox" id="auto_copy" name="auto_copy"><label for="auto_copy">Auto Copy</label>
-  <button id="clear">Clear</button>
-
   <script src="popup.js" type="module"></script>
 </body>
 
