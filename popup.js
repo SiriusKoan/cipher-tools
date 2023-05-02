@@ -52,3 +52,25 @@ document.getElementById("md5").addEventListener("click", () => {
     input.value = MD5.hex(input.value);
 });
 
+// copy
+var copyButton = document.getElementsByClassName("copy-btn");
+for (var i = 0; i < copyButton.length; i++) {
+    copyButton[i].addEventListener("click", function() {
+        copy(this.parentElement.children[0].id);
+        // show copied message
+        let copied = this.parentElement.children[2];
+        // copied.innerText = "Copied!";
+        copied.style.display = "block";
+        setTimeout(function() {
+            copied.style.display = "none";
+            // copied.innerText = "";
+            // copied.remove();
+        }, 1000);
+    });
+}
+
+function copy(id) {
+    let input = document.getElementById(id);
+    navigator.clipboard.writeText(input.value);
+}
+
