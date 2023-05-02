@@ -38,6 +38,13 @@ document.getElementById("sha256").addEventListener("click", () => {
     input.value = SHA256.hex(input.value);
 });
 
+// sha512
+document.getElementById("sha512").addEventListener("click", () => {
+    let SHA512 = new Hashes.SHA512;
+    let input = document.getElementById("sha512Field");
+    input.value = SHA512.hex(input.value);
+});
+
 // md5
 document.getElementById("md5").addEventListener("click", () => {
     let MD5 = new Hashes.MD5;

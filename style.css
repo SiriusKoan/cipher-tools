@@ -1,3 +1,62 @@
+body {
+    font-family: 'Ubuntu Mono', monospace;
+    background-color: #212A3E;
+    color: white;
+    margin: 10px;
+    width: 300px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 30px;
+    margin: 15px;
+}
+
 span {
-    font-weight: bold;
+    font-size: large;
+}
+
+button {
+    color: black;
+    padding: 8px;
+    margin: 5px 0px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+input[type=text], input[type=password] {
+    padding: 5px;
+    margin: 5px 0px;
+    border: none;
+    outline: none;
+    background: #f1f1f1;
+    display: block;
+    width: 80%;
+}
+
+footer {
+    text-align: center;
+    font-size: 15px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    padding: 10px;
+    margin: 20px 10px;
+    border-radius: 3px;
+    background-color: #394867;
+    box-shadow: 1px 3px 5px 1px #394867;
 }
